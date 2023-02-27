@@ -15,7 +15,7 @@ const HomeSlide = () => {
   const [sliderRef, setSliderRef] = useState(null);
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     autoplay: false,
     speed: 500,

@@ -36,10 +36,6 @@ export default function FeaValls(props) {
       <ResponsiveContainer
         carouselRef={ref}
         render={(parentWidth, carouselRef) => {
-          // If you want to use a ref to call the method of StackedCarousel, you cannot set the ref directly on the carousel component
-          // This is because ResponsiveContainer will not render the carousel before its parent's width is determined
-          // parentWidth is determined after your parent component mounts. Thus if you set the ref directly it will not work since the carousel is not rendered
-          // Thus you need to pass your ref object to the ResponsiveContainer as the carouselRef prop and in your render function you will receive this ref object
           let currentVisibleSlide = 3;
           if (parentWidth <= 1440) currentVisibleSlide = 3;
           if (parentWidth <= 1080) currentVisibleSlide = 1;
@@ -59,20 +55,20 @@ export default function FeaValls(props) {
       />
       <>
         <div
-          style={{ position: "absolute", top: "40%", left: 10, zIndex: 10 }}
+        className="v-icons"
           onClick={() => {
             ref.current?.goBack();
           }}
         >
-          <BiChevronRight />
+        <BiChevronLeft  className="v-left"/>
         </div>
         <div
-          style={{ position: "absolute", top: "40%", right: 10, zIndex: 10 }}
+        className="v-icons"
           onClick={() => {
             ref.current?.goNext(4);
           }}
         >
-          <BiChevronLeft />
+          <BiChevronRight  className="v-right"/>
         </div>
       </>
     </div>

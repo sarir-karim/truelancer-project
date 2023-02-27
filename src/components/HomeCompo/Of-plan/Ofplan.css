@@ -1,0 +1,62 @@
+
+.plane-container p{
+    color: #2F2F2F;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.plane-container .p-heading{
+    color: white;
+    font-size: 25px;
+    margin-left: 5rem;
+}
+
+.plane-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.p-card{
+    width: 25%;
+    height: 500px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.p-card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.p-card img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-description {
+    position: absolute;
+    bottom: 1rem;
+    padding-left: 20px;
+}
+
+.p-description h5{
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: serif ;
+    color: white;
+}
+
+.p-description a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: end;
+    font-size: 17px;
+}
+
+.p-description .f-icon{
+    font-size: 19px;
+}

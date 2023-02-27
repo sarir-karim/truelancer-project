@@ -4,6 +4,8 @@ import Carousel from './components/HomeCompo/HomeCarousel/Carousel'
 import PopAreas from './components/HomeCompo/PopAreas/PopAreas'
 import FeaApartment from "./components/HomeCompo/FeaApartment/FeaApartment";
 import FeaValls from "./components/HomeCompo/FeaValls/FeaValls";
+import Journel from "./components/HomeCompo/Journel/Journel";
+import Ofplane from './components/HomeCompo/Of-plan/Ofplan'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
     <PopAreas/>
     <FeaApartment/>
     <FeaValls/>
+    <Journel/>
+    <Ofplane/>
     </>
   );
 }

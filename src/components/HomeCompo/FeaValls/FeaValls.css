@@ -44,3 +44,21 @@
   color: #2F2F2F;
   text-align: center;
 }
+
+.v-icons{
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+
+.v-left{
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+.v-right{
+  position: absolute;
+  top: 60%;
+  right: 9%;
+}
