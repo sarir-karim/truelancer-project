@@ -1,0 +1,75 @@
+.header-container{
+    background: black;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+    align-items: center;
+    
+}
+
+header h5{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-left: 23px;
+}
+
+.n-left{
+    display: flex;
+    gap: 2.2rem;
+    margin-left: 2rem;
+}
+
+.n-left li{
+    list-style: none;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.n-right{
+    display: flex;
+    gap: 20px;
+}
+
+.n-right span{
+    font-size: 19px;
+}
+
+.n-drop{
+    display: flex;
+    align-items:center;
+  
+}
+
+.n-down{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.n-btn{
+    padding: 13px 35px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 14px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.header-text{
+    text-align:center;
+    padding: 7rem 0 10rem 0;
+    
+}
+
+.header-text span{
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+}

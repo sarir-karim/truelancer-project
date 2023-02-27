@@ -1,0 +1,54 @@
+
+.feature-container p{
+    color: #2F2F2F;
+    text-align: center;
+}
+
+.feature-container .f-heading{
+    color: white;
+    font-size: 25px;
+    margin-left: 5rem;
+}
+
+.feature-cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.f-card{
+    width: 28%;
+    height: 500px;
+    position: relative;
+}
+
+.f-card img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.f-description {
+    position: absolute;
+    bottom: 1rem;
+    padding-left: 20px;
+}
+
+.f-description h5{
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: serif ;
+    color: white;
+}
+
+.f-description a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: end;
+    font-size: 17px;
+}
+
+.f-description .f-icon{
+    font-size: 19px;
+}

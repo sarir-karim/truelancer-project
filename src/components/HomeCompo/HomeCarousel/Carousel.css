@@ -1,0 +1,153 @@
+.home-container{
+    background: white;
+    padding:  0;
+    position: relative;
+ }
+ 
+.home-container .home-images{
+     position: relative;
+ }
+
+ .home-headpara{
+    text-align: center;
+ }
+
+ .home-headpara h2{
+    font-weight: 900;
+    font-size: 30px;
+    color: #3D506D;
+    margin-bottom: 20px;
+ }
+ 
+ .home-headpara span{
+    font-style: italic;
+    padding-top: 25px;
+
+ }
+
+   .btn-h{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+   }
+
+   .btn-l{
+    left: 5px;
+    top: 50%;
+   }
+   .btn-r{
+    right: 25px;
+    top:50%;
+   }
+  
+   .home-container .home-images{
+    height: 670px;
+     transition: 0.3s;
+     overflow: hidden;
+   }
+
+   .home-container .home-images img{
+     width: 100%;
+     height: auto;
+     position: absolute;
+     transform: 0.3s;
+     object-fit:fill;
+     z-index: -1;
+     border-radius: none;
+   }
+ 
+   .home-slider{
+     width: 100%;
+     margin: 0 auto;
+   }
+ 
+   .slick-next,.slick-prev{
+     display: none !important;
+   }
+
+   /* home desc */
+
+   .home-desc {
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    width: 100%;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 99;
+   }
+
+   .home-desc h5{
+    font-size:3rem;
+    margin: 10px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+   }
+
+   .home-desc button{
+    padding: 15px 45px;
+    font-size: 17px;
+    margin-top: 25px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+   }
+
+   /* .slick-dots{
+    position: absolute !important;
+    padding-bottom: 3rem;
+   }
+
+   .slick-dots li button:before{
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+    font-size: 9px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: .2px;
+    padding-bottom: 2px;
+    
+   } */
+   
+
+   @media screen and (max-width: 425px) {
+    .home-desc{
+      top: 15%;
+    }
+
+    .home-desc h1{
+      font-size: 1.2rem;
+    }
+
+    .home-desc2 h1{
+      font-size: 1.2rem;
+    }
+
+    .home-desc2{
+      top: 10%;
+      right: 0%;
+    }
+
+    .btn-l{
+      left: 5px;
+      top: 50%;
+      display: none;
+     }
+     .btn-r{
+      right: 25px;
+      top:50%;
+      display: none;
+     }
+
+     .home-container .home-images{
+      height: 200px;
+     }
+   }

@@ -1,0 +1,125 @@
+.areas-main{
+  background: rgb(0, 0, 0);
+  padding:  20px 30px;
+  
+}
+
+.areas-main h5 {
+  font-size: 30px;
+  color: white;
+  font-family:  serif;
+  margin-bottom: 30px;
+}
+.areas-container{
+   
+    position: relative;
+    display: flex;
+    gap: 20px;
+ }
+ 
+.areas-container .areas-images{
+     position: relative;
+ }
+
+ .areas-headpara{
+    text-align: center;
+ }
+
+ .areas-headpara h2{
+    font-weight: 900;
+    font-size: 30px;
+    color: #3D506D;
+    margin-bottom: 20px;
+ }
+ 
+ .areas-headpara span{
+    font-style: italic;
+    padding-top: 25px;
+
+ }
+
+   .areas-container .areas-images{
+    height: 290px;
+     transition: 0.3s;
+     overflow: hidden;
+   }
+
+   .areas-container .areas-images img{
+     width: 100%;
+     height: auto;
+     position: absolute;
+     transform: 0.3s;
+     object-fit:fill;
+     z-index: -1;
+     border-radius: none;
+   }
+ 
+   .areas-slider{
+     width: 32%;
+     margin: 0 auto;
+   }
+ 
+   .slick-next,.slick-prev{
+     display: none !important;
+   }
+
+   /* areas desc */
+
+   .areas-desc {
+    position: absolute;
+    background: rgba(0,0,0,1);
+    padding: 5px 15px;
+    color: white;
+    z-index: 99;
+    top: 1rem;
+    left: 1rem;
+   }
+
+   .image-description {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .image-description .d-left span{
+    font-size: 20px;
+    font-family: serif;
+   }
+   
+   .slider-m{
+    margin-bottom: 0;
+   }
+
+   @media screen and (max-width: 425px) {
+    .areas-desc{
+      top: 15%;
+    }
+
+    .areas-desc h1{
+      font-size: 1.2rem;
+    }
+
+    .areas-desc2 h1{
+      font-size: 1.2rem;
+    }
+
+    .areas-desc2{
+      top: 10%;
+      right: 0%;
+    }
+
+    .btn-l{
+      left: 5px;
+      top: 50%;
+      display: none;
+     }
+     .btn-r{
+      right: 25px;
+      top:50%;
+      display: none;
+     }
+
+     .areas-container .areas-images{
+      height: 200px;
+     }
+   }
