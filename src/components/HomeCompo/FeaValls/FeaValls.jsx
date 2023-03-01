@@ -31,9 +31,9 @@ export default function FeaValls(props) {
   const ref = React.useRef();
   return (
     <div className="valls-container">
-       <p>___________________________________________________________________________________________________________________________________________________________________________________</p>
+      <article></article>
        <h5 className="vall-heading">Feature Valls</h5>
-      <ResponsiveContainer
+      <ResponsiveContainer className="vall-slide"
         carouselRef={ref}
         render={(parentWidth, carouselRef) => {
           let currentVisibleSlide = 3;
@@ -43,7 +43,7 @@ export default function FeaValls(props) {
             <StackedCarousel
               ref={carouselRef}
               slideComponent={Card}
-              slideWidth={parentWidth < 800 ? parentWidth - 40 : 550}
+              slideWidth={300}
               carouselWidth={parentWidth}
               data={data}
               currentVisibleSlide={currentVisibleSlide}
@@ -77,7 +77,7 @@ export default function FeaValls(props) {
 
 // Very import to memoize your Slide component otherwise there might be performance issue
 // At minimum your should do a simple React.memo(SlideComponent)
-// If you want the absolute best performance then pass in a custom comparator function like below
+// If you want the abso8ute best performance then pass in a custom comparator function like below
 export const Card = React.memo(function (props) {
   const { data, dataIndex } = props;
   const { cover } = data[dataIndex];
@@ -88,7 +88,8 @@ export const Card = React.memo(function (props) {
       <img
         style={{
           height: "100%",
-          width: "100%",
+          width: "250%",
+          marginLeft: '-3rem',
           objectFit: "fill",
           borderRadius: 0
         }}

@@ -1,21 +1,33 @@
-import React from 'react';
-import {AiOutlineSearch} from 'react-icons/ai'
+import React, { useState } from 'react';
+import {HiOutlineSearch} from 'react-icons/hi'
 import './Search.css'
+import SearchPopup from '../SearchPopup/Popup'
 
-const Search = () => {
+const Search = (props) => {
+  const [showModel, setShowModel] = useState(false)
+
+  const toggleModel = ()=>{
+    setShowModel(!showModel)
+  }
   return (
+    <>
     <div className='search-container'>
-        <label htmlFor="">
-            Location <br />
+        <label htmlFor="" className='search'>
+           <span>Location</span>
             <input type="text" placeholder='Area, development...'/>
         </label>
 
        <div className="search-right">
         <span>Filters</span>
-        <button> <AiOutlineSearch className='s-icon'/> 205 results</button>
+        <button onClick={toggleModel}> <HiOutlineSearch className='s-icon'/></button>
 
        </div>
+
     </div>
+            <SearchPopup showModel={showModel} toggleModel={toggleModel}/>
+          
+        
+       </>
   )
 }
 

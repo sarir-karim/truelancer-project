@@ -1,11 +1,12 @@
 import Header from "./components/Header/Header";
 import Search from "./components/SearchCompo/Search";
 import Carousel from './components/HomeCompo/HomeCarousel/Carousel'
-import PopAreas from './components/HomeCompo/PopAreas/PopAreas'
+import FeaAreas from './components/HomeCompo/FeaAreas/FeaAreas'
 import FeaApartment from "./components/HomeCompo/FeaApartment/FeaApartment";
 import FeaValls from "./components/HomeCompo/FeaValls/FeaValls";
 import Journel from "./components/HomeCompo/Journel/Journel";
 import Ofplane from './components/HomeCompo/Of-plan/Ofplan'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -13,11 +14,14 @@ function App() {
     <Header/>
     <Search/>
     <Carousel/>
-    <PopAreas/>
+    <FeaAreas/>
     <FeaApartment/>
     <FeaValls/>
     <Journel/>
     <Ofplane/>
+    <Footer/>
+
+    {/* <CarouselItem/> */}
     </>
   );
 }

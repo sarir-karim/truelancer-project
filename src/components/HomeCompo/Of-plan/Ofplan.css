@@ -1,55 +1,52 @@
 
-.plane-container p{
-    color: #2F2F2F;
-    text-align: center;
-    margin-top: 3rem;
-}
+/* .of-container article{
+    height: 1px;
+    background-color: #212121;
+    width: 90%;
+    margin: 0 auto;
+} */
 
-.plane-container .p-heading{
+/* .of-container .f-heading{
     color: white;
     font-size: 25px;
-    margin-left: 5rem;
+    margin-left: 3.3rem;
+    font-family: serif;
 }
 
-.plane-cards{
-    display: flex;
+.of-cards{
     justify-content: center;
-    gap: 40px;
+    gap: 25px;
+    width: 95% !important;
+    margin: auto;
+    padding-left: 20px;
 }
 
-.p-card{
-    width: 25%;
+.o-card{
+    width: 93% !important;
     height: 500px;
     position: relative;
-    transition: 0.5s;
 }
 
-.p-card:hover{
-    transform: scale(1.05);
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.p-card img{
+.o-card img{
     width:100%;
     height: 100%;
     object-fit: cover;
 }
 
-.p-description {
+.o-description {
     position: absolute;
     bottom: 1rem;
     padding-left: 20px;
 }
 
-.p-description h5{
+.o-description h5{
     margin-bottom: 5px;
     font-size: 20px;
     font-family: serif ;
     color: white;
 }
 
-.p-description a{
+.o-description a{
     text-decoration: none;
     color: white;
     display: flex;
@@ -57,6 +54,103 @@
     font-size: 17px;
 }
 
-.p-description .f-icon{
+.o-description .f-icon{
     font-size: 19px;
+}
+
+
+.slick-slide .slick-active .slick-current{
+    transform: scale(1.1) !important;
+    border: 1px solid red;
+    -webkit-user-drag: 500px !important;
+}
+
+.slick-slide .slick-active  {
+    transform: scale(1.1) !important;
+}
+@media screen and (max-width: 425px){
+    .of-container .f-heading{
+        margin-left: 2rem;
+    }
+
+    .of-cards{
+        width: 100% !important;
+    }
+
+    .o-card{
+        width: 95% !important;
+    }
+
+    .of-container p{
+        display: none;
+        width: 100%;
+    }
+} */
+
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+.of-slider{
+    width: 100%;
+}
+.of-container .f-heading{
+    color: white;
+    font-size: 25px;
+    margin-left: 3.3rem;
+    font-family: serif;
+}
+.slider{
+  width: 90%;
+  height: 500px;
+}
+
+.slide, .slide img{
+  width: 96%;
+  height: 560px;
+}
+.slide{
+  /* opacity: .5; */
+  transform: scale(.76);
+  transition: .5s;
+  height: 550px;
+  /* filter: blur(5px); */
+}
+
+.slide-active{
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(01.01);
+}
+
+.dot-active{
+  background: #121227;
+  box-shadow: 0 0 15px 10px #ccc;
+}
+.o-description {
+  position: absolute;
+  bottom: 1rem;
+  padding-left: 20px;
+}
+
+.o-description h5{
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: serif ;
+  color: white;
+}
+
+.o-description a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: end;
+  font-size: 17px;
+}
+
+.o-description .f-icon{
+  font-size: 19px;
+}
+@media screen and (max-width: 768px) {
+  .header{
+    font-size: 7vw;
+  }
 }

@@ -1,3 +1,6 @@
+.journel-container{
+    margin-bottom: 4rem;
+}
 .journel-heading{
     font-size: 28px;
     font-family: serif;
@@ -16,11 +19,11 @@
 .j-main{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
-.j-slider{width: 45%;
-    height: 280px;
+.j-slider{width: 40%;
+    /* height: 280px; */
     border-radius: 4px;
     
 }
@@ -59,4 +62,83 @@
 }
 
 
+/* slider */
+
+.react-stacked-center-carousel {
+    width: 100% !important;
+  }
+  
+  .j-images {
+    /* width: 100% !important;  */
+    height: 240px;
+    margin-top: 40px;
+    margin-left: -6rem;
+  }
+  
+  .j-img{
+    height: "100%";
+    width: 200px;
+    object-fit: "cover";
+    border-radius: 0;
+  }
+
+
+  @media screen and (max-width: 425px){
+    .journel-container p{
+        display: none;
+    }
+
+    .j-main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .journel-heading{
+        margin-bottom: 1rem;
+        text-align: left;
+        margin-left: 1.2rem;
+    }
+
+    .j-slider{width: 95%;
+        /* height: 280px; */
+        border-radius: 4px;
+        
+    }
+
+    .j-images {
+        height: 250px;
+        margin-top: 40px;
+        margin-left: -4rem;
+      }
+
+      .j-right{
+        color: white;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        /* text-align: justify; */
+    }
+    .r-heading{
+        font-size: 25px;
+    }
+
+    .r-para{
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .r-footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.2rem;
+        width: 90%;
+    }
+
+    .r-footer .left, .right{
+        gap: 0.5rem;
+        font-size: 14px;
+    }
+
+  }
 

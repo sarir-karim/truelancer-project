@@ -3,15 +3,35 @@
     color: white;
 }
 
-header{
+.header{
     display: flex;
     justify-content: space-between;
     padding: 0px 25px;
     align-items: center;
+  
     
 }
 
-header h5{
+.select{
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    margin: 0;
+}
+
+.option{
+    background: black !important;
+    margin: 0;
+    min-height: 1em !important;
+    color: white;
+}
+.option:hover{
+    background: black !important;
+    color: white;
+}
+
+.header h5{
     font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
@@ -72,4 +92,119 @@ header h5{
     line-height: 45px;
     font-weight: 200;
     font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* mobile navbar */
+.mob-header{
+    position: relative;
+    display: none;
+}
+.mob-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.mob-main h5{
+    font-size: 20px;
+}
+
+.mob-main .mob-icon{
+    font-size: 20px;
+}
+
+.mob-box-main{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100vh;
+     position: absolute;
+     top: 0;
+     z-index: 9;
+}
+
+.mob-close{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mob-box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+    color: black;
+    height: 100vh;
+    position: absolute;
+    width: 70%;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.mob-n-left{
+    list-style:none;
+    padding-left: 0;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 3.5rem;
+}
+
+.mob-n-drop{
+    display: flex;
+    /* align-items:center; */
+    justify-content: center;
+}
+
+.mob-n-down{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.mob-n-btn{
+    padding: 13px 30px;
+    background: transparent;
+    color: rgb(8, 8, 8);
+    border: 1px solid rgb(17, 16, 16);
+    border-radius: 14px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.mob-n-right{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 20px;
+}
+
+/* meida queries */
+
+
+@media  screen and (max-width: 425px){
+
+    .header{
+        display: none;
+    }
+
+    .mob-header{
+        display: block;
+    }
+    .header-text{
+        padding: 4rem 0 7rem 0 !important;
+    }
+
+    .header-text span{
+        font-size: 19px;
+       
+        width: 80%;
+    }
 }

@@ -1,6 +1,8 @@
+
 .areas-main{
   background: rgb(0, 0, 0);
-  padding:  20px 30px;
+  padding:  00px 30px;
+  margin-bottom: 3rem;
   
 }
 
@@ -9,12 +11,14 @@
   color: white;
   font-family:  serif;
   margin-bottom: 30px;
+  margin-left: 3rem;
 }
 .areas-container{
-   
     position: relative;
     display: flex;
     gap: 20px;
+    width: 95%;
+    margin: 0 auto;
  }
  
 .areas-container .areas-images{
@@ -55,7 +59,7 @@
    }
  
    .areas-slider{
-     width: 32%;
+     width: 33%;
      margin: 0 auto;
    }
  
@@ -88,38 +92,41 @@
    
    .slider-m{
     margin-bottom: 0;
+    height: 287px;
    }
 
    @media screen and (max-width: 425px) {
-    .areas-desc{
-      top: 15%;
+   
+    .areas-main h5{
+      font-size: 25px;
+      margin-left: .5rem;
+    }
+    .areas-container{
+      flex-direction: column;
+      width: 100%;
     }
 
-    .areas-desc h1{
-      font-size: 1.2rem;
+    .areas-slider{
+      width: 100%;
     }
 
-    .areas-desc2 h1{
-      font-size: 1.2rem;
+    .areas-container .areas-images{
+      height: 243px;
     }
 
-    .areas-desc2{
-      top: 10%;
-      right: 0%;
+    .slider-m{
+      height: 250px;
     }
 
-    .btn-l{
-      left: 5px;
-      top: 50%;
-      display: none;
-     }
-     .btn-r{
-      right: 25px;
-      top:50%;
-      display: none;
-     }
+    .image-description .d-left span{
+      font-size: 18px;
+    }
 
-     .areas-container .areas-images{
-      height: 200px;
-     }
+    .image-description p{
+      margin-top: 0.5rem;
+      font-size: 14px;
+    }
+
+   
+
    }

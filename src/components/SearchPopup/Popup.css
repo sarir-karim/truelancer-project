@@ -1,0 +1,165 @@
+.search-container-main{
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    z-index: 999;
+    overflow-y: scroll;
+    padding: 20px;
+}
+.s-close{
+    cursor: pointer;
+}
+
+.search-modal {
+    width: 60%;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search-modal > header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #d6d5d5;
+}
+
+header > p {
+    text-align: center;
+    width: 100%;
+}
+
+.search-modal > .search-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.search-nav > a {
+    border-bottom: 2px solid transparent;
+    padding: 0.5rem 1rem;
+    color: #000;
+}
+.search-nav > a:last-child {
+    border-bottom: 2px solid #d6d5d5;
+}
+
+section {
+    padding: 1rem;
+}
+
+section > h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: rgb(46, 46, 46);
+}
+.location-section > input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    outline: none;
+    border: 1px solid #d6d5d5;
+    color: #646262;
+}
+
+.type-section > .labels-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 5%;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.type-section .labels-container > label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    width: 10rem;
+}
+
+.price-section > .selects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.selects-container > select {
+    width: 49%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #d6d5d5;
+    outline: none;
+}
+
+.line {
+    width: 1%;
+    height: 1px;
+    background-color: #646262;
+}
+
+.bedrooms-section > .bedrooms-count-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 3%;
+    row-gap: 1rem;
+}
+
+.bedrooms-count-container > .active {
+    background-color: #000;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.bedrooms-count-container > li {
+    border: 1px solid #d6d5d5;
+    padding: 0.5rem 1.5rem;
+    border-radius: 75px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 5rem;
+}
+
+.bedrooms-count-container > li:hover {
+    background-color: #000;
+    border: 1px solid transparent;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.size-section > .selects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.features-section > .labels-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 5%;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.features-section .labels-container > label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    width: 10rem;
+}
+
+@media screen and (max-width: 425px) {
+    .search-modal {
+        width: 90%;
+    }
+}

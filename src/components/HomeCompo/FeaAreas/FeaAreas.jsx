@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 
-import {
-  FaChevronLeft,
-  FaChevronRight,
-} from "react-icons/fa";
-import { FiLink } from "react-icons/fi";
+
 import Slider from "react-slick";
-import "./PopAreas.css";
+import "./FeaAreas.css";
 import img1 from './images/img1.avif'
 import img2 from './images/img2.avif'
 import img3 from './images/img3.avif'
@@ -17,7 +13,7 @@ const HomeSlide = () => {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -43,7 +39,7 @@ const HomeSlide = () => {
   return (
     <>
     <div className="areas-main">
-    <h5>Popular areas</h5>
+    <h5>Featured Apartments</h5>
       <div className="areas-container">
         <div className="areas-slider">
         <Slider {...settings} ref={setSliderRef} className="slider-m">
